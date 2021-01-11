@@ -132,6 +132,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        this.onDestroy();
+        this.mUnityPlayer.quit();
+//        UnityPlayer.currentActivity.finish();
     }
 }
